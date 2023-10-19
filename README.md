@@ -24,26 +24,6 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 4. Sum the total salary of all the employee from the employee_salary table
 5. Calculate the top 5 salary earners from the employee_salary table
 
-Employee ID with salary greater than 50000:
-
-_SELECT employee_ID, salary FROM employee_salary_
-
-_WHERE salary > 40000_
-
-_ORDER BY salary DESC_
-
-_limit 5;_
-
-![](Greater_Than.png)
-
-The above snapshot shows the employee_ID with salary greater than 50000. And the syntax used to achieve this result is as follows;
-
-_SELECT Employee_ID, SUM(Salary) FROM employee_salary_
-
-_GROUP BY employee_ID_
-
-_HAVING SUM(Salary) > 50000;_
-
 
 Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display:
 
@@ -58,7 +38,23 @@ _Select Name, Salary from employee_info_
 _join employee_salary;
 
 
+Employee ID with salary greater than 50000:
+
+
+![](Greater_Than.png)
+
+
+The above snapshot shows the employee_ID with salary greater than 50000. And the syntax used to achieve this result is as follows;
+
+_SELECT Employee_ID, SUM(Salary) FROM employee_salary_
+
+_GROUP BY employee_ID_
+
+_HAVING SUM(Salary) > 50000;_
+
+
 The average salary from the Employee_salary table:
+
 
 ![](Average_Salary.png)
 
@@ -80,6 +76,21 @@ The above snapshot shows the total salary of the employee from the employee_sala
 
 _Select Sum(Salary) As `Total Salary` from employee_salary;_
 
+
 Top 5 salary earners from the employee_salary table;
+
+
+![](Top_Earners.png)
+
+
+The above snapshot shows the the top 5 salary earners from the eomployee_salary table. The syntax used to achieve this result is as follows;
+
+_SELECT employee_ID, salary FROM employee_salary_
+
+_WHERE salary > 40000_
+
+_ORDER BY salary DESC_
+
+_limit 5;_
 
 
