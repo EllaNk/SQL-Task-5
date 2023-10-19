@@ -18,8 +18,8 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 
 ## Generated Questions:
 
-1. Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display:
-Show the 10 names and cities where the DeptID is 120
+1. Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display
+2. Calculate the average salary from the Employee_salary table
 Calculate the average profit yearly increment
 Calculate the sum of yearly increments
 Show names, emails, and Pincodes where the pin code is greater than 410000 and displays them in descending order.
@@ -35,4 +35,15 @@ _Use staff;_
 
 _Select Name, Salary from employee_info_
 
-_join employee_salary;_
+_join employee_salary;
+
+The average salary from the Employee_salary table:
+
+![](Average_Salary.png)
+
+
+The above snapshot shows the average salary from the Employee_Salary table. And the syntax use is as follows;
+
+_Select * from Employee_salary;_
+
+_Select Avg(Salary) As `Average salary` from employee_salary;_
