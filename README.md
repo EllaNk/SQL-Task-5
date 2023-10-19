@@ -22,8 +22,13 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 2. Get employee ID with salary greater than 50000
 3. Calculate the average salary from the Employee_salary table
 4. Sum the total salary of all the employee from the employee_salary table
+5. Calculate the top 5 salary earners from the employee_salary table
 
 Employee ID with salary greater than 50000:
+
+![](Greater_Than.png)
+
+The above snapshot shows the employee_ID with salary greater than 50000. And the syntax used to achieve this result is as follows;
 
 _SELECT Employee_ID, SUM(Salary) FROM employee_salary_
 
@@ -66,3 +71,7 @@ Total salary of all the employee from the employee_salary table:
 The above snapshot shows the total salary of the employee from the employee_salary table. The command used to get this result is as follows;
 
 _Select Sum(Salary) As `Total Salary` from employee_salary;_
+
+Top 5 salary earners from the employee_salary table;
+
+
