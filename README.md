@@ -20,6 +20,7 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 
 1. Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display
 2. Calculate the average salary from the Employee_salary table
+3. Sum the total salary of all the employee from the employee_salary table
 Calculate the average profit yearly increment
 Calculate the sum of yearly increments
 Show names, emails, and Pincodes where the pin code is greater than 410000 and displays them in descending order.
@@ -47,3 +48,7 @@ The above snapshot shows the average salary from the Employee_Salary table. And 
 _Select * from Employee_salary;_
 
 _Select Avg(Salary) As `Average salary` from employee_salary;_
+
+Total salary of all the employee from the employee_salary table:
+
+_Select Sum(Salary) As `Total Salary` from employee_salary;_
