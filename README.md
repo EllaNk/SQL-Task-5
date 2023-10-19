@@ -25,6 +25,11 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 
 Employee ID with salary greater than 50000:
 
+_SELECT Employee_ID, SUM(Salary) FROM employee_salary_
+
+_GROUP BY employee_ID_
+
+_HAVING SUM(Salary) > 50000;_
 
 
 Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display:
