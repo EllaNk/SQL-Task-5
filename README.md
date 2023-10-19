@@ -26,6 +26,14 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 
 Employee ID with salary greater than 50000:
 
+_SELECT employee_ID, salary FROM employee_salary_
+
+_WHERE salary > 40000_
+
+_ORDER BY salary DESC_
+
+_limit 5;_
+
 ![](Greater_Than.png)
 
 The above snapshot shows the employee_ID with salary greater than 50000. And the syntax used to achieve this result is as follows;
