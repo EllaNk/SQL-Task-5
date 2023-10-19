@@ -19,12 +19,13 @@ Come up with 4 business questions and query the tables provided. Ensure you use 
 ## Generated Questions:
 
 1. Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display
-2. Calculate the average salary from the Employee_salary table
-3. Sum the total salary of all the employee from the employee_salary table
-Calculate the average profit yearly increment
-Calculate the sum of yearly increments
-Show names, emails, and Pincodes where the pin code is greater than 410000 and displays them in descending order.
-Join the employee and salary tables having the EmpID as the unique Numbe
+2. Get employee ID with salary greater than 50000
+3. Calculate the average salary from the Employee_salary table
+4. Sum the total salary of all the employee from the employee_salary table
+
+Employee ID with salary greater than 50000:
+
+
 
 Join two tables (Employee_info tabel and Employee_salary table) to get the name and salary at one display:
 
@@ -38,6 +39,7 @@ _Select Name, Salary from employee_info_
 
 _join employee_salary;
 
+
 The average salary from the Employee_salary table:
 
 ![](Average_Salary.png)
@@ -49,6 +51,13 @@ _Select * from Employee_salary;_
 
 _Select Avg(Salary) As `Average salary` from employee_salary;_
 
+
 Total salary of all the employee from the employee_salary table:
+
+
+![](Total_Salary.png)
+
+
+The above snapshot shows the total salary of the employee from the employee_salary table. The command used to get this result is as follows;
 
 _Select Sum(Salary) As `Total Salary` from employee_salary;_
